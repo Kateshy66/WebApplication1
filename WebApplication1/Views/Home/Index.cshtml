@@ -1,0 +1,14 @@
+﻿@model IEnumerable<WebApplication1.Models.Animal>
+@{
+    ViewBag.Title = "Index";
+
+}
+<h2>Index</h2>
+<ul>
+@foreach(var a in Model)
+
+{
+    <li>@a.Name</li>
+
+}
+</ul>
